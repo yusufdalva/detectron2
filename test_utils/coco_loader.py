@@ -52,3 +52,8 @@ def clear_zip_files(dataset_type):
         annotations_path = os.path.join(coco_path, "image_info_test2017.zip")
     os.remove(coco_data_path)
     os.remove(annotations_path)
+
+
+download_coco_dataset("val")
+unzip_loaded_data("val")
+clear_zip_files("val")
